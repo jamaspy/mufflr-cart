@@ -10,7 +10,15 @@ const VariantSelector = props => {
         name={option.name}
         key={option.id}
         onChange={props.onChange}
-        
+        style={{borderRadius: 5,
+          outline: `none`,
+          border: `1px solid grey`,
+          width: `80px`,
+          marginTop: 5,
+          fontSize: `1rem`,
+          fontWeight: 300,
+          fontFamily: `Montserrat`,
+          textAlign: `center`}}
       >
         {option.values.map(value => {
           return (

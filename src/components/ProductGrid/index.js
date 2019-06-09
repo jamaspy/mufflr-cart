@@ -48,6 +48,7 @@ const ProductGrid = () => {
         width={[1, 1 / 2, 1 / 3]}
         px={2}
         key={x.node.id}
+        style={{textAlign: "center"}}
         >
           <Link to={`/product/${x.node.handle}/`}>
             <Img
@@ -56,6 +57,7 @@ const ProductGrid = () => {
             />
           </Link>
           <p>{x.node.title}</p>
+          
         </Box>
       ))}
     </Flex>

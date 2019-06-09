@@ -40,7 +40,10 @@ const LineItem = props => {
         background:`linear-gradient(#141E30 0, #243B55 100%)`,
         color: `white`,
         padding: 10,
-        fontFamily: "Montserrat"
+        fontSize: `1rem`,
+        fontWeight: 300,
+        fontFamily: `Montserrat`,
+        textAlign: `center`
         }}
         >Remove</button>
       </Box>

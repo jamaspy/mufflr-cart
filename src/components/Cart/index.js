@@ -35,8 +35,10 @@ const Cart = () => {
         background:`white`,
         color: `black`,
         padding: 10,
-        fontFamily: "Montserrat",
-        display: `inline-block`
+        fontSize: `1rem`,
+          fontWeight: 300,
+          fontFamily: `Montserrat`,
+          textAlign: `center`
       }}>Check out</button>
       </div>
     </div>

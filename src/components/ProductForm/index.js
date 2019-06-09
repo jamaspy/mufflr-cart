@@ -86,7 +86,9 @@ const ProductForm = props => {
           width: `30px`,
           marginTop: 5,
           fontSize: `1rem`,
-          fontWeight: 300
+          fontWeight: 300,
+          fontFamily: `Montserrat`,
+          textAlign: `center`
         }}
       />
       <br/>
@@ -97,7 +99,11 @@ const ProductForm = props => {
         borderRadius: 5,
         background:`linear-gradient(#141E30 0, #243B55 100%)`,
         color: `white`,
-        padding: 10
+        padding: 10,
+        fontSize: `1rem`,
+          fontWeight: 300,
+          fontFamily: `Montserrat`,
+          textAlign: `center`
       }}
       type="submit" disabled={!available} onClick={handleAddToCart}>
         Add to Cart

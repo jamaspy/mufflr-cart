@@ -17,13 +17,18 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.title || node.slug
           return (
-            <div >
+            <div style={{margin: `20px auto`, background: `linear-gradient(#141E30 0, #243B55 100%)`, borderRadius: 10, overflow: `hidden`, marginBottom: 20, textAlign: `center`, maxWidth:"50vw"}} >
             <div key={node.slug}>
             <Link to={node.slug}> 
-              <div >
+              <div>
               <img src={node.image.fluid.src} alt={node.title} style={{width:"100%", height:300}}/>
                 <h3>
-                  <Link style={{ color: `white`, boxShadow: `none`, fontWeight: 300, fontSize:"2rem" }} to={node.slug}>
+                  <Link style={{ 
+                    color: `white`, 
+                    
+                    fontWeight: 300, 
+                    fontSize:"2rem", 
+                    textDecoration:`none` }} to={node.slug}>
                     {title}
                   </Link>
                 </h3>
