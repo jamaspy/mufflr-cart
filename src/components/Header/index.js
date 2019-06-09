@@ -10,31 +10,34 @@ import { Flex, Box } from '@rebass/grid/emotion'
 
 import StoreContext from '../../context/StoreContext'
 
+
+//Navbar Component 
 const Wrapper = styled.div({
 	background: `linear-gradient(#141E30 0, #243B55 100%)`,
 	marginBottom: `1.45rem`,
 	padding: `1rem`
 })
 
-const CartCounter = styled.span({
+//Displays when user adds to cart 
+const CartCounter = styled.div({
 	backgroundColor: `white`,
 	color: `#663399`,
+	textAlign: `center`,
+	display: `inline-block`,
+	width: `20px`,
+	height: `20px`,
 	borderRadius: `100%`,
-	padding: `10px`,
-	fontSize: `1rem`,
-	
-	
-	
+	marginLeft: `5px`
 })
 
 // Style P-Tag for **Menu Links**
-const H1 = props => (
+const NavLink = props => (
 	<p
 		style={{
 			margin: 0,
 			marginRight: 20, 
 			display: `inline-block`,
-
+			
 		}}
 	>
 		<Link
@@ -71,28 +74,30 @@ const Header = ({ siteTitle }) => {
 		<Wrapper>
 			<Container>
 				<Box>
-					<H1 to='/'>
+					<NavLink to='/'>
 						Home
-					</H1>
-					<H1 to='/shop/'>
+					</NavLink>
+					<NavLink to='/shop/'>
 						Shop
-					</H1>
-					<H1 to='/blog/'>
+					</NavLink>
+					<NavLink to='/blog/'>
 						Blog
-					</H1>
-					<H1 to='/contact/'>
+					</NavLink>
+					<NavLink to='/contact/'>
 						Contact
-					</H1>
+					</NavLink>
 				</Box>
-				<Box style={{border:"1px solid black"}} ml='auto'>
-					<H1 to='/cart'>
+				<Box ml='auto'>
+				
+					<NavLink to='/cart'>
+					<FontAwesomeIcon icon={faShoppingBasket} /> Cart
 						{lineItems.length !== 0 &&
 							<CartCounter>
 								{lineItems.length}
 							</CartCounter>
 						}
-						<FontAwesomeIcon icon={faShoppingBasket} /> Cart
-					</H1>
+						
+					</NavLink>
 				</Box>
 			</Container>
 		</Wrapper>
