@@ -25,12 +25,24 @@ const LineItem = props => {
         {variantImage}
       </Box>
       <Box width={[2/3, 3/6]}>
-        <p>
-          {line_item.title} {line_item.variant.title}
-        </p>
+        <p>{line_item.title}</p> 
+        <p>Size: {line_item.variant.title}</p>
+        
+        
       </Box>
       <Box width={[1, 2/6]}>
-        <button onClick={handleRemove}>Remove</button>
+        <button 
+        onClick={handleRemove}
+        style={{
+       
+        border: `1px solid black`,
+        borderRadius: 5,
+        background:`linear-gradient(#141E30 0, #243B55 100%)`,
+        color: `white`,
+        padding: 10,
+        fontFamily: "Montserrat"
+        }}
+        >Remove</button>
       </Box>
     </Flex>
   )

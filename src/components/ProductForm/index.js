@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import StoreContext from '../../context/StoreContext'
 import VariantSelector from './VariantSelector'
 
+
 const ProductForm = props => {
   const [quantity, setQuantity] = useState(1)
   const [variant, setVariant] = useState(props.product.variants[0])
@@ -78,12 +79,30 @@ const ProductForm = props => {
         step="1"
         onChange={handleQuantityChange}
         value={quantity}
+        style={{
+          borderRadius: 5,
+          outline: `none`,
+          border: `1px solid grey`,
+          width: `30px`,
+          marginTop: 5,
+          fontSize: `1rem`,
+          fontWeight: 300
+        }}
       />
       <br/>
-      <button type="submit" disabled={!available} onClick={handleAddToCart}>
+      <button 
+      style={{
+        marginTop: 10, 
+        border: `1px solid black`,
+        borderRadius: 5,
+        background:`linear-gradient(#141E30 0, #243B55 100%)`,
+        color: `white`,
+        padding: 10
+      }}
+      type="submit" disabled={!available} onClick={handleAddToCart}>
         Add to Cart
       </button>
-      {!available && <p>This Product is out of Stock!</p>}
+      {!available && <p>Sorry, Product is out of Stock!</p>}
     </>
   )
 }

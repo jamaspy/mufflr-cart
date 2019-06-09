@@ -10,10 +10,12 @@ const VariantSelector = props => {
         name={option.name}
         key={option.id}
         onChange={props.onChange}
+        
       >
         {option.values.map(value => {
           return (
             <option
+            
               value={value}
               key={`${option.name}-${value}`}
             >{`${value}`}</option>

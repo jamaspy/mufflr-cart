@@ -3,6 +3,8 @@ import React, { useContext } from 'react'
 import StoreContext from '../../context/StoreContext'
 import LineItem from './LineItem'
 
+
+
 const Cart = () => {
   const context = useContext(StoreContext)
   const { checkout } = context
@@ -18,16 +20,25 @@ const Cart = () => {
   return (
     <div>
       {line_items}
-      <h2>Subtotal</h2>
-      <p>$ {checkout.subtotalPrice}</p>
-      <br />
-      <h2>Taxes</h2>
-      <p>$ {checkout.totalTax}</p>
-      <br />
-      <h2>Total</h2>
-      <p>$ {checkout.totalPrice}</p>
-      <br />
-      <button onClick={handleCheckout}>Check out</button>
+      <div style={{
+        background: `linear-gradient(#141E30 0, #243B55 100%)`, color:`white`, 
+        padding:10,
+        borderRadius:`0 0 10px 10px`}}>
+
+      <h2>Total: ${checkout.totalPrice}</h2>
+      
+      <button 
+      onClick={handleCheckout}
+      style={{
+        border: `1px solid black`,
+        borderRadius: 5,
+        background:`white`,
+        color: `black`,
+        padding: 10,
+        fontFamily: "Montserrat",
+        display: `inline-block`
+      }}>Check out</button>
+      </div>
     </div>
   )
 }

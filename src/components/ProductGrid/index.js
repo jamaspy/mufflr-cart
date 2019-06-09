@@ -55,7 +55,7 @@ const ProductGrid = () => {
               alt={x.node.handle}
             />
           </Link>
-          <p style={{color:"pink"}}>{x.node.title}</p>
+          <p>{x.node.title}</p>
         </Box>
       ))}
     </Flex>
