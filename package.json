@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "James Aspinall",
   "dependencies": {
+    "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
@@ -19,6 +20,7 @@
     "gatsby-plugin-offline": "^2.0.16",
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-source-contentful": "^2.0.67",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-source-shopify2": "^2.0.7",
     "gatsby-transformer-sharp": "^2.1.8",

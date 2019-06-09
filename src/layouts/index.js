@@ -6,6 +6,8 @@ import StoreContext, { defaultStoreContext } from '../context/StoreContext'
 import Header from '../components/Header'
 import { GlobalStyle } from '../utils/styles'
 
+
+//Layout carries store context across site
 class Layout extends React.Component {
   state = {
     store: {
@@ -136,17 +138,21 @@ class Layout extends React.Component {
           render={data => (
             <>
               <Header siteTitle={data.site.siteMetadata.title} />
+              
               <div
                 style={{
                   margin: `0 auto`,
                   maxWidth: 960,
                   padding: `0px 1.0875rem 1.45rem`,
                   paddingTop: 0,
+                  
+                  
                 }}
               >
                 {children}
                 
               </div>
+      
             </>
           )}
         />

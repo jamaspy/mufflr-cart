@@ -1,15 +1,16 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
 
 import SEO from '../components/seo'
+import ProductGrid from '../components/ProductGrid'
 
-const SecondPage = () => (
+const IndexPage = () => (
   <>
-    <SEO title="Page two" />
-    <h1>SHOP</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <SEO title="Home" keywords={[`mufflr`, `motorbike`, `apparel`]} />
+    <p style={{textAlign: `center`, fontSize:`2rem`}}>Let's Do Some Shopping</p>
+    
+    <ProductGrid />
   </>
 )
 
-export default SecondPage
+export default IndexPage
