@@ -1,12 +1,15 @@
 {
-  "name": "gatsby-shopify-starter",
+  "name": "mufflr-apparel",
   "private": true,
-  "description": "A simple starter to build a blazing fast Shopify store quickly with Gatsby",
+  "description": "Where Fashion Meets Fucntion | Motorbike Apparel",
   "version": "0.1.0",
-  "author": "Alexander Hörl <alexander.horl2@live.de>",
+  "author": "James Aspinall",
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@rebass/grid": "^6.0.0-7",
     "gatsby": "^2.1.18",
     "gatsby-image": "^2.0.20",

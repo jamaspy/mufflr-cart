@@ -3,6 +3,7 @@ import Image from 'gatsby-image'
 import styled from '@emotion/styled-base'
 import { Global, css } from "@emotion/core"
 
+
 export const GlobalStyle = props => (
   <Global
     {...props}
@@ -11,7 +12,9 @@ export const GlobalStyle = props => (
         margin: 0;
       }
       html {
-        font-family: sans-serif;
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
       }

@@ -1,31 +1,40 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
+
 import styled from '@emotion/styled'
 import { Flex, Box } from '@rebass/grid/emotion'
 
 import StoreContext from '../../context/StoreContext'
 
 const Wrapper = styled.div({
-	background: `rebeccapurple`,
+	background: `linear-gradient(#141E30 0, #243B55 100%)`,
 	marginBottom: `1.45rem`,
+	padding: `1rem`
 })
 
 const CartCounter = styled.span({
 	backgroundColor: `white`,
 	color: `#663399`,
-	borderRadius: `20px`,
-	padding: `0 10px`,
-	fontSize: `1.2rem`,
-	float: `right`,
-	margin: `-10px`,
-	zIndex: 999,
+	borderRadius: `100%`,
+	padding: `10px`,
+	fontSize: `1rem`,
+	
+	
+	
 })
 
+// Style P-Tag for **Menu Links**
 const H1 = props => (
-	<h1
+	<p
 		style={{
 			margin: 0,
+			marginRight: 20, 
+			display: `inline-block`,
+
 		}}
 	>
 		<Link
@@ -37,7 +46,7 @@ const H1 = props => (
 		>
 			{props.children}
 		</Link>
-	</h1>
+	</p>
 )
 
 const Container = props => (
@@ -63,17 +72,26 @@ const Header = ({ siteTitle }) => {
 			<Container>
 				<Box>
 					<H1 to='/'>
-						{siteTitle}
+						Home
+					</H1>
+					<H1 to='/shop/'>
+						Shop
+					</H1>
+					<H1 to='/blog/'>
+						Blog
+					</H1>
+					<H1 to='/contact/'>
+						Contact
 					</H1>
 				</Box>
-				<Box ml='auto'>
+				<Box style={{border:"1px solid black"}} ml='auto'>
 					<H1 to='/cart'>
 						{lineItems.length !== 0 &&
 							<CartCounter>
 								{lineItems.length}
 							</CartCounter>
 						}
-						Cart 🛍
+						<FontAwesomeIcon icon={faShoppingBasket} /> Cart
 					</H1>
 				</Box>
 			</Container>
