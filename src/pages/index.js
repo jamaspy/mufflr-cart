@@ -1,15 +1,17 @@
 import React from 'react'
+import Background from "../utils/background"
 
 
-import SEO from '../components/seo'
 
 const Home = () => (
-  <>
-    <SEO title="Home" />
-    <h1>HOMEPAGE</h1>
-    <p>Welcome to Mufflr</p>
- 
-  </>
+  
+  <div style={{height: "88vh", margin: 0,}}>
+  
+    <Background/>
+  
+  </div>
 )
+
+
 
 export default Home

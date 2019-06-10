@@ -13,8 +13,8 @@ import StoreContext from '../../context/StoreContext'
 
 //Navbar Component 
 const Wrapper = styled.div({
-	background: `linear-gradient(#141E30 0, #243B55 100%)`,
-	marginBottom: `1.45rem`,
+	background: `linear-gradient(to bottom, #141E30 0, #243B55 80%)`,
+	// marginBottom: `1.45rem`,
 	padding: `1rem`
 })
 
@@ -46,6 +46,7 @@ const NavLink = props => (
 				color: `white`,
 				textDecoration: `none`,
 			}}
+			activeStyle={{ color: "grey", borderBottom:"1px solid grey"}}
 		>
 			{props.children}
 		</Link>
