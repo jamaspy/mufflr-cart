@@ -33,11 +33,7 @@ const BackgroundSection = ({ className }) => (
             color:"white",
             fontWeight:300,
             }}>
-          <p stlye={{fontSize: "2rem"}}>Welcome To Mufflr</p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora reiciendis sit tenetur eveniet reprehenderit, aperiam dolores numquam soluta, voluptate libero obcaecati vitae fugit consectetur asperiores provident rerum facilis? Fugit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora reiciendis sit tenetur eveniet reprehenderit, aperiam dolores numquam soluta, voluptate libero obcaecati vitae fugit consectetur asperiores provident rerum facilis? Fugit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora reiciendis sit tenetur eveniet reprehenderit, aperiam dolores numquam soluta, voluptate libero obcaecati vitae fugit consectetur asperiores provident rerum facilis? Fugit.
-          </div>
+         
           </BackgroundImage>
        )
      }
