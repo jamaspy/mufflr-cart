@@ -6,7 +6,7 @@ import ProductGrid from '../components/ProductGrid'
 
 const IndexPage = () => (
   <>
-    <SEO title="Home" keywords={[`mufflr`, `motorbike`, `apparel`]} />
+    <SEO title="Shop" keywords={[`mufflr`, `motorbike`, `apparel`]} />
     
     
     <ProductGrid />

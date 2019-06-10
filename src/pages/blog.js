@@ -12,7 +12,7 @@ class BlogIndex extends React.Component {
 
     return (
       <>
-        <SEO title="All posts" />
+        <SEO title="Blog" />
       
         {posts.map(({ node }) => {
           const title = node.title || node.slug
