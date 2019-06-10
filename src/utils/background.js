@@ -19,6 +19,7 @@ const BackgroundSection = ({ className }) => (
        // Set ImageData.
        const imageData = data.desktop.childImageSharp.fluid
        return (
+     
           <BackgroundImage Tag="section"
                            className={className}
                            fluid={imageData}
@@ -32,9 +33,10 @@ const BackgroundSection = ({ className }) => (
             clipPath: "polygon(0 0, 100% 0, 75% 100%, 0% 100%)",
             color:"white",
             fontWeight:300,
-            }}>
+            }}></div>
          
           </BackgroundImage>
+        
        )
      }
      }
