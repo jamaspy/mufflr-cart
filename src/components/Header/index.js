@@ -37,13 +37,14 @@ const NavLink = props => (
 			margin: 0,
 			marginRight: 20, 
 			display: `inline-block`,
+			fontSize: `1.5rem`,
 			
 		}}
 	>
 		<Link
 			{...props}
 			style={{
-				color: `black`,
+				color: `#383838`,
 				textDecoration: `none`,
 			}}
 			activeStyle={{ color: "grey", borderBottom:"1px solid grey"}}
