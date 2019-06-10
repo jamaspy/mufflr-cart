@@ -18,10 +18,13 @@ const Cart = () => {
   })
 
   return (
-    <div>
+    <div style={{margin:"10px 30px"}}>
+      <p style={{fontSize: `2rem`,
+        fontWeight: 300,
+        fontFamily: `Montserrat`,}}>Here's Your Stuff</p>
       {line_items}
       <div style={{
-        background: `linear-gradient(#141E30 0, #243B55 100%)`, color:`white`, 
+        border:`1px solid grey`,  color:`black`, 
         padding:10,
         borderRadius:`0 0 10px 10px`}}>
 

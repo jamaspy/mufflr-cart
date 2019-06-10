@@ -48,7 +48,7 @@ const ProductGrid = () => {
         width={[1, 1 / 2, 1 / 3]}
         px={2}
         key={x.node.id}
-        style={{textAlign: "center"}}
+        style={{textAlign: "center", marginTop: 30}}
         >
           <Link to={`/product/${x.node.handle}/`}>
             <Img

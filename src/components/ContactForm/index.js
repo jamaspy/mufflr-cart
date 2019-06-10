@@ -35,8 +35,7 @@ class Form extends Component {
           <form 
           onSubmit={this.handleSubmit}
           style={{
-              border: "1px solid black",
-              borderRadius: 10,
+              
               maxWidth: "50%",
               margin: "0 auto",
               padding: 20,

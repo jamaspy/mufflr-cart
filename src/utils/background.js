@@ -6,7 +6,7 @@ import BackgroundImage from 'gatsby-background-image'
 const BackgroundSection = ({ className }) => (
     <StaticQuery query={graphql`
       query {
-        desktop: file(relativePath: { eq: "bike-bg.jpg" }) {
+        desktop: file(relativePath: { eq: "bike-bg2.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
               ...GatsbyImageSharpFluid_withWebp
@@ -25,7 +25,7 @@ const BackgroundSection = ({ className }) => (
                            fluid={imageData}
                            backgroundColor={`#040e18`}
           >
-          <div style={{
+          {/* <div style={{
             background:"linear-gradient(#243B55  0, #141E30 100%)",width:"50vh", 
             height:"100%", 
             display:"inline-block",
@@ -33,7 +33,7 @@ const BackgroundSection = ({ className }) => (
             clipPath: "polygon(0 0, 100% 0, 75% 100%, 0% 100%)",
             color:"white",
             fontWeight:300,
-            }}></div>
+            }}></div> */}
          
           </BackgroundImage>
         

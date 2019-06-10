@@ -7,7 +7,7 @@ import Form from "../components/ContactForm/index"
 const Contact = () => (
   <>
     <SEO title="Contact" />
-    <h1></h1>
+   
     <Form />
     
   </>

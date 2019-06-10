@@ -13,7 +13,7 @@ import StoreContext from '../../context/StoreContext'
 
 //Navbar Component 
 const Wrapper = styled.div({
-	background: `linear-gradient(to bottom, #141E30 0, #243B55 80%)`,
+	background: `white`,
 	// marginBottom: `1.45rem`,
 	padding: `1rem`
 })
@@ -43,7 +43,7 @@ const NavLink = props => (
 		<Link
 			{...props}
 			style={{
-				color: `white`,
+				color: `black`,
 				textDecoration: `none`,
 			}}
 			activeStyle={{ color: "grey", borderBottom:"1px solid grey"}}
@@ -76,22 +76,22 @@ const Header = ({ siteTitle }) => {
 			<Container>
 				<Box>
 					<NavLink to='/'>
-						Home
+						mufflr
 					</NavLink>
 					<NavLink to='/shop/'>
-						Shop
+						shop
 					</NavLink>
 					<NavLink to='/blog/'>
-						Blog
+						blog
 					</NavLink>
 					<NavLink to='/contact/'>
-						Contact
+						contact
 					</NavLink>
 				</Box>
 				<Box ml='auto'>
 				
 					<NavLink to='/cart'>
-					<FontAwesomeIcon icon={faShoppingBasket} /> Cart
+					Cart  <FontAwesomeIcon icon={faShoppingBasket} /> 
 						{lineItems.length !== 0 &&
 							<CartCounter>
 								{lineItems.length}
