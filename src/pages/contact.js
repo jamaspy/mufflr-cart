@@ -1,15 +1,16 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
 
 import SEO from '../components/seo'
+import Form from "../components/ContactForm/index"
 
-const SecondPage = () => (
+const Contact = () => (
   <>
-    <SEO title="Page two" />
-    <h1>CONTACT</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <SEO title="Contact" />
+    <h1></h1>
+    <Form />
+    
   </>
 )
 
-export default SecondPage
+export default Contact
