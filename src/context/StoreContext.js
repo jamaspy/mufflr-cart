@@ -2,8 +2,8 @@ import React from 'react'
 import Client from 'shopify-buy'
 
 const client = Client.buildClient({
-  storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
-  domain: `mufflr-apparel.myshopify.com`,
+  storefrontAccessToken: '634e3f6f004171efe480b1f09212d0ff',
+  domain: 'mufflr-apparel.myshopify.com',
 })
 
 export const defaultStoreContext = {
