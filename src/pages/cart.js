@@ -3,12 +3,10 @@ import SEO from '../components/seo'
 import Cart from '../components/Cart'
 
 const SecondPage = () => (
- 
-  <>
+  <main>
    <SEO title="cart"/>
-    
-    <Cart />
-  </>
+   <Cart />
+  </main>
 )
 
 export default SecondPage

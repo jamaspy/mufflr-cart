@@ -11,7 +11,7 @@ class BlogIndex extends React.Component {
     const posts = data.allContentfulPost.edges
 
     return (
-      <div style={{textAlign:"center"}}>
+      <main style={{textAlign:"center"}}>
         <SEO title="Blog" />
       
         {posts.map(({ node }) => {
@@ -50,7 +50,7 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-      </div>
+      </main>
     )
   }
 }
