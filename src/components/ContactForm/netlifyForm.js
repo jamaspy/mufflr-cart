@@ -14,6 +14,12 @@ const Netform = () => {
     <p>
       <label>Message: <textarea name="message"></textarea></label>
     </p>
+
+    <p>
+  <div data-netlify-recaptcha="true"></div>
+  </p>
+
+
     <p>
       <button type="submit">Send</button>
     </p>
