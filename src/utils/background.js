@@ -6,7 +6,7 @@ import BackgroundImage from 'gatsby-background-image'
 const BackgroundSection = ({ className }) => (
     <StaticQuery query={graphql`
       query {
-        desktop: file(relativePath: { eq: "bike-bg2.jpg" }) {
+        desktop: file(relativePath: { eq: "bike-bg3.png" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
               ...GatsbyImageSharpFluid_withWebp

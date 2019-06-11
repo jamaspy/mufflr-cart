@@ -8,22 +8,28 @@ import { Img } from '../../utils/styles'
 const ProductPage = ({ data }) => {
   const product = data.shopifyProduct
   return (
+    <div style={{height:"50vh"}}>
     <Flex flexWrap='wrap'>
+
       <Box pr={[null, 3]} width={[1, 1/2]}>
         {product.images.map(x => (
+          
           <Img
             fluid={x.localFile.childImageSharp.fluid}
             key={x.id}
             alt={product.title}
           />
+      
         ))}
       </Box>
+
       <Box width={[1, 1/2]}>
         <h1>{product.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: product.descriptionHtml }} />
         <ProductForm product={product} />
       </Box>
     </Flex >
+    </div>
   )
 }
 

@@ -67,7 +67,7 @@ const ProductForm = props => {
     : null
 
   return (
-    <>
+    <div style={{maxHeight:"70vh"}}>
       <h3>${productVariant.price}</h3>
       {variantSelectors}
       <label htmlFor="quantity">Quantity </label>
@@ -109,7 +109,7 @@ const ProductForm = props => {
         Add to Cart
       </button>
       {!available && <p>Sorry, Product is out of Stock!</p>}
-    </>
+    </div>
   )
 }
 
