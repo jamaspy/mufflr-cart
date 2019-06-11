@@ -5,6 +5,7 @@ const Netform = () => {
   name="contact" 
   method="POST" 
   data-netlify="true"
+  action="/shop"
   >
   <p>
     <label>Your Name: <input type="text" name="name" /></label>   
