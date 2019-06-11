@@ -1,6 +1,6 @@
 import React from 'react'
 import SEO from '../components/seo'
-import Form from "../components/ContactForm/index"
+import Form from "../components/ContactForm/netlifyForm"
 
 const Contact = () => (
   <main>

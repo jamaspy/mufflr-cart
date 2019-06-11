@@ -67,7 +67,7 @@ class Form extends Component {
 
             <label>
               <h1>How We Reply</h1>
-              <input t
+              <input
               type="email"
               placeholder="snail@mail.com" 
               email={this.state.value} 
