@@ -4,6 +4,11 @@ import SEO from "../components/seo"
 
 const Home = () => (
   <main style={{height: "88vh", margin: 0,}}>
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <textarea name="message"></textarea>
+</form>
   <SEO title="Home" />
   <Background/>
   </main>
