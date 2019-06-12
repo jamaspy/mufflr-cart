@@ -3,7 +3,7 @@ const Netform = () => {
   
   return(
 
-        <form name="contact" method="post">
+        <form name="contact" method="post" action="/success">
           <input type="hidden" name="contact" value="contact" />
           <p>
             <label>Your Name: <input type="text" name="name"/></label>
