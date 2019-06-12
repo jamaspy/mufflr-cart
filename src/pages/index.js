@@ -7,7 +7,7 @@ const Home = () => (
   <main style={{height: "88vh", margin: 0,}}>
   
   <SEO title="Home" />
-  <NetlifyInit />
+  
   <Background/>
   </main>
 )

@@ -3,7 +3,7 @@ const NetInit = () => {
   
   return(
 
-<form name="contact" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
+<form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
 <input type="text" name="name" />
 <input type="email" name="email" />
 <textarea name="message"></textarea>
