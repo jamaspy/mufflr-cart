@@ -1,6 +1,7 @@
 import React from "react";
 import { navigateTo } from "gatsby-link";
 import SEO from "../components/seo"
+import Background from "../utils/background"
 
 function encode(data) {
   return Object.keys(data)
@@ -37,11 +38,14 @@ export default class Contact extends React.Component {
     return (
       <div>
         <SEO title="Contact" />
+        <Background />
         <p style={{
           fontSize: `3rem`,
           fontWeight: 300,
           fontFamily: `Montserrat`,
-          textAlign: `center`,}}>Say Hello...</p>
+          textAlign: `center`,
+          color: "#383838",
+          }}>Say Hello...</p>
         <div>
         <form
           name="contact"
@@ -53,7 +57,7 @@ export default class Contact extends React.Component {
           style={{
             maxWidth: "50%",
             margin: "0 auto",
-            padding: 20,
+            
             textAlign: "center",
         }}
         >
@@ -129,7 +133,19 @@ export default class Contact extends React.Component {
             </label>
           </p>
           <p>
-            <button type="submit">Send</button>
+            <button 
+            type="submit"
+            style={{
+              border: `1px solid black`,
+              borderRadius: 5,
+              background:`white`,
+              color: `black`,
+              padding: 10,
+              fontSize: `1rem`,
+              fontWeight: 300,
+              fontFamily: `Montserrat`,
+              textAlign: `center`
+            }}>Send</button>
           </p>
         </form>
         </div>

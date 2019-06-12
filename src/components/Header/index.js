@@ -21,7 +21,7 @@ const Wrapper = styled.div({
 //Displays when user adds to cart 
 const CartCounter = styled.div({
 	backgroundColor: `white`,
-	color: `#663399`,
+	color: `#383838`,
 	textAlign: `center`,
 	display: `inline-block`,
 	width: `20px`,
