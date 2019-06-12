@@ -37,7 +37,12 @@ export default class Contact extends React.Component {
     return (
       <div>
         <SEO title="Contact" />
-        <h1>Contact</h1>
+        <p style={{
+          fontSize: `3rem`,
+          fontWeight: 300,
+          fontFamily: `Montserrat`,
+          textAlign: `center`,}}>Say Hello...</p>
+        <div>
         <form
           name="contact"
           method="post"
@@ -45,6 +50,12 @@ export default class Contact extends React.Component {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
+          style={{
+            maxWidth: "50%",
+            margin: "0 auto",
+            padding: 20,
+            textAlign: "center",
+        }}
         >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
@@ -55,27 +66,73 @@ export default class Contact extends React.Component {
             </label>
           </p>
           <p>
-            <label>
-              Your name:<br />
-              <input type="text" name="name" onChange={this.handleChange} />
+            <label >
+              What Should We Call You?<br />
+              <input 
+              type="text" 
+              name="name"
+              placeholder="Phil Mitchell"
+              autoFocus 
+              onChange={this.handleChange}
+              style={{
+                display: "block",
+                margin: "0 auto",
+                marginBottom: "20px",
+                fontSize: `1.5rem`,
+                fontWeight: 300,
+                fontFamily: `Montserrat`,
+                textAlign: `center`,
+                borderRadius:"3px",
+                border: "1px solid grey"
+              }} />
             </label>
           </p>
           <p>
             <label>
-              Your email:<br />
-              <input type="email" name="email" onChange={this.handleChange} />
+              How Do We Reply?<br />
+              <input 
+              type="email" 
+              name="email"
+              placeholder="me@email.com" 
+              onChange={this.handleChange}
+              style={{
+                display: "block",
+                margin: "0 auto",
+                marginBottom: "20px",
+                fontSize: `1.5rem`,
+                fontWeight: 300,
+                fontFamily: `Montserrat`,
+                textAlign: `center`,
+                borderRadius:"3px",
+                border: "1px solid grey"
+              }} />
             </label>
           </p>
           <p>
             <label>
-              Message:<br />
-              <textarea name="message" onChange={this.handleChange} />
+              Your Words...<br />
+              <textarea 
+              name="message"
+              placeholder="Your message..." 
+              onChange={this.handleChange}
+              style={{
+                display: "block",
+                margin: "0 auto",
+                marginBottom: "20px",
+                fontSize: `1rem`,
+                fontWeight: 300,
+                fontFamily: `Montserrat`,
+                textAlign: `center`,
+                borderRadius:"3px",
+                border: "1px solid grey"
+              }} />
             </label>
           </p>
           <p>
             <button type="submit">Send</button>
           </p>
         </form>
+        </div>
       </div>
     );
   }
