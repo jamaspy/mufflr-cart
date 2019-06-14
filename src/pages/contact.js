@@ -57,7 +57,6 @@ export default class Contact extends React.Component {
           style={{
             maxWidth: "50%",
             margin: "0 auto",
-            
             textAlign: "center",
         }}
         >

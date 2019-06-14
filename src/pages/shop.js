@@ -4,8 +4,16 @@ import ProductGrid from '../components/ProductGrid'
 
 const Shop = () => (
   <main>
-    <SEO title="Shop" keywords={[`mufflr`, `motorbike`, `apparel`]} />
+    <SEO 
+    title="Shop" 
+    keywords={[
+      `mufflr`, 
+      `motorbike`, 
+      `apparel`
+      ]} />
+
     <ProductGrid />
+    
   </main>
 )
 
